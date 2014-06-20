@@ -1,0 +1,34 @@
+#+title: Java 8 web services
+#+author: José Miguel Martínez Carrasco
+#+email: jm@0pt1mates.com
+
+* Introduction
+
+Develop REST web services with:
+
+- dropwizard
+- gradle
+- java 8
+
+* Time report
+#+BEGIN: clocktable :maxlevel 2 :scope subtree
+#+CAPTION: Clock summary at [2014-06-20 Fri 15:58]
+| Headline                     | Time   |      |
+|------------------------------+--------+------|
+| *Total time*                 | *2:33* |      |
+|------------------------------+--------+------|
+| Time report                  | 2:33   |      |
+| \__ TODO gradle installation |        | 0:07 |
+| \__ TODO dropwizard tutorial |        | 1:55 |
+| \__ TODO gradle openjdk 8    |        | 0:31 |
+#+END:
+
+** TODO gradle installation
+   CLOCK: [2014-06-20 Fri 12:00]--[2014-06-20 Fri 12:07] =>  0:07
+
+** TODO dropwizard tutorial
+   CLOCK: [2014-06-20 Fri 16:08]
+   CLOCK: [2014-06-20 Fri 12:25]--[2014-06-20 Fri 14:20] =>  1:55
+
+** TODO gradle openjdk 8
+   CLOCK: [2014-06-20 Fri 15:26]--[2014-06-20 Fri 15:57] =>  0:31
