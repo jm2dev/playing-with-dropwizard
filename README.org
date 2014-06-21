@@ -6,29 +6,43 @@
 
 Develop REST web services with:
 
-- dropwizard
-- gradle
+- [[https://dropwizard.github.io/dropwizard/index.html][Dropwizard]]
+- [[http://www.gradle.org][Gradle]]
 - java 8
+
+* Dropwizard tutorial
+
+It is a gradle version of the [[https://dropwizard.github.io/dropwizard/getting-started.html][tutorial]].
+
+#+BEGIN_SRC bash
+gradle build
+gradle shadowJar
+java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
+#+END_SRC
 
 * Time report
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2014-06-20 Fri 15:58]
+#+CAPTION: Clock summary at [2014-06-21 Sat 16:18]
 | Headline                     | Time   |      |
 |------------------------------+--------+------|
-| *Total time*                 | *2:33* |      |
+| *Total time*                 | *4:40* |      |
 |------------------------------+--------+------|
-| Time report                  | 2:33   |      |
-| \__ TODO gradle installation |        | 0:07 |
-| \__ TODO dropwizard tutorial |        | 1:55 |
+| Time report                  | 4:40   |      |
+| \__ DONE gradle installation |        | 0:07 |
+| \__ DONE dropwizard tutorial |        | 2:14 |
+| \__ TODO dropwizard testing  |        | 1:48 |
 | \__ TODO gradle openjdk 8    |        | 0:31 |
 #+END:
 
-** TODO gradle installation
+** DONE gradle installation
    CLOCK: [2014-06-20 Fri 12:00]--[2014-06-20 Fri 12:07] =>  0:07
 
-** TODO dropwizard tutorial
-   CLOCK: [2014-06-20 Fri 16:08]
+** DONE dropwizard tutorial
+   CLOCK: [2014-06-20 Fri 16:08]--[2014-06-20 Fri 16:27] =>  0:19
    CLOCK: [2014-06-20 Fri 12:25]--[2014-06-20 Fri 14:20] =>  1:55
+
+** TODO dropwizard testing
+   CLOCK: [2014-06-21 Sat 14:30]--[2014-06-21 Sat 16:18] =>  1:48
 
 ** TODO gradle openjdk 8
    CLOCK: [2014-06-20 Fri 15:26]--[2014-06-20 Fri 15:57] =>  0:31
