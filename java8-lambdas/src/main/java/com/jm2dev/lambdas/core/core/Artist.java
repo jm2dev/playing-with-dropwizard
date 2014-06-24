@@ -20,4 +20,8 @@ public final class Artist {
     public String getNationality() {
         return nationality;
     }
+
+    public boolean isFrom(String nationality) {
+        return this.nationality.equals(nationality);
+    }
 }

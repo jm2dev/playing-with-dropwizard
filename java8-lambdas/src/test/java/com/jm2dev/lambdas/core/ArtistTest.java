@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 public class ArtistTest {
     String name = "Celtic woman";
@@ -29,5 +30,10 @@ public class ArtistTest {
     @Test(expected = Exception.class)
     public void invalidArtistWithNoNationality() {
         Artist artist = new Artist(name, null);
+    }
+
+    @Test
+    public void artistIsFromGivenNationality() {
+        assertTrue(artist.isFrom(nationality));
     }
 }
