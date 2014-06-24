@@ -22,16 +22,17 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
 
 * Time report
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2014-06-21 Sat 16:18]
+#+CAPTION: Clock summary at [2014-06-23 Mon 14:31]
 | Headline                     | Time   |      |
 |------------------------------+--------+------|
-| *Total time*                 | *4:40* |      |
+| *Total time*                 | *7:02* |      |
 |------------------------------+--------+------|
-| Time report                  | 4:40   |      |
+| Time report                  | 7:02   |      |
 | \__ DONE gradle installation |        | 0:07 |
 | \__ DONE dropwizard tutorial |        | 2:14 |
 | \__ TODO dropwizard testing  |        | 1:48 |
-| \__ TODO gradle openjdk 8    |        | 0:31 |
+| \__ DONE gradle openjdk 8    |        | 0:31 |
+| \__ TODO java 8              |        | 2:22 |
 #+END:
 
 ** DONE gradle installation
@@ -44,5 +45,10 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
 ** TODO dropwizard testing
    CLOCK: [2014-06-21 Sat 14:30]--[2014-06-21 Sat 16:18] =>  1:48
 
-** TODO gradle openjdk 8
+** DONE gradle openjdk 8
    CLOCK: [2014-06-20 Fri 15:26]--[2014-06-20 Fri 15:57] =>  0:31
+
+** TODO java 8
+   CLOCK: [2014-06-24 Tue 10:14]--[2014-06-24 Tue 11:25] =>  1:11
+   CLOCK: [2014-06-23 Mon 13:55]--[2014-06-23 Mon 14:31] =>  0:36
+   CLOCK: [2014-06-23 Mon 11:28]--[2014-06-23 Mon 13:14] =>  1:46

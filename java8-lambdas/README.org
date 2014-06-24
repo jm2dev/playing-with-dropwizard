@@ -1,0 +1,10 @@
+* Introduction
+
+Source code to follow Java 8 Lambdas book.
+
+* Build and run
+
+#+BEGIN_SRC bash
+gradle shadowJar
+java -jar build/libs/java8-lambdas-1.0-all.jar
+#+END_SRC
