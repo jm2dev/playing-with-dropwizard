@@ -1,16 +1,25 @@
 package com.jm2dev.lambdas.core.core;
 
+import java.util.Collections;
+import java.util.List;
 import java.util.Objects;
 
 public final class Artist {
     private String name;
     private String nationality;
+    private List<Artist> members;
 
     public Artist(String name, String nationality) {
+        this(name, nationality, Collections.emptyList());
+    }
+
+    public Artist(String name, String nationality, List<Artist> members) {
         Objects.requireNonNull(name);
         Objects.requireNonNull(nationality);
+        Objects.requireNonNull(members);
         this.name = name;
         this.nationality = nationality;
+        this.members = members;
     }
 
     public String getName() {
@@ -43,5 +52,9 @@ public final class Artist {
         int result = name.hashCode();
         result = 31 * result + nationality.hashCode();
         return result;
+    }
+
+    public boolean isSolo() {
+        return members.isEmpty();
     }
 }
