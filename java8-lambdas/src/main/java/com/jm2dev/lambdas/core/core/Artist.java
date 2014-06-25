@@ -24,4 +24,24 @@ public final class Artist {
     public boolean isFrom(String nationality) {
         return this.nationality.equals(nationality);
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Artist artist = (Artist) o;
+
+        if (!name.equals(artist.name)) return false;
+        if (!nationality.equals(artist.nationality)) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name.hashCode();
+        result = 31 * result + nationality.hashCode();
+        return result;
+    }
 }

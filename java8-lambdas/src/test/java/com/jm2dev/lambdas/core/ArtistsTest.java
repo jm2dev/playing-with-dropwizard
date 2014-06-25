@@ -44,4 +44,18 @@ public class ArtistsTest {
                 .collect(toList());
         assertThat(capitalizedArtists, hasItems("ANDREA CORR", "BONO", "PACO DE LUCIA"));
     }
+
+    private Artist capitalize(Artist artist) {
+        return new Artist(artist.getName().toUpperCase(), artist.getNationality());
+    }
+
+    @Test
+    public void capitalizedArtists() {
+        Artist corr = new Artist("ANDREA CORR", irish);
+        List<Artist> capitalizedArtists = artists.stream()
+                .map(artist -> capitalize(artist))
+                .collect(toList());
+        assertThat(capitalizedArtists, hasItem(corr));
+
+    }
 }
