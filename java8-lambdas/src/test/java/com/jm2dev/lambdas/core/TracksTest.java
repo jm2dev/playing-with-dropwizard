@@ -18,6 +18,7 @@ public class TracksTest {
         Track shortestTrack = Stream.of(rockyRoad, emerald)
                 .min(Comparator.comparing(track -> track.getLength()))
                 .get();
+
         assertThat(shortestTrack, is(rockyRoad));
     }
 
@@ -29,6 +30,7 @@ public class TracksTest {
         Track longestTrack = Stream.of(rockyRoad, emerald)
                 .max(Comparator.comparing(track -> track.getLength()))
                 .get();
+
         assertThat(longestTrack, is(emerald));
     }
 }

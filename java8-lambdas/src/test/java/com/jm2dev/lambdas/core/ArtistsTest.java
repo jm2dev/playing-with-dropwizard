@@ -3,6 +3,7 @@ package com.jm2dev.lambdas.core;
 import com.jm2dev.lambdas.core.core.Artist;
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -53,5 +54,16 @@ public class ArtistsTest {
                 .collect(toList());
         assertThat(capitalizedArtists, hasItem(corr));
 
+    }
+
+    @Test
+    public void getArtistNationalityPlayingGivenAlbum() {
+        List<String> nationalities = SampleData.forgivenNotForgotten.getArtists().stream()
+                .filter(artist -> !artist.isSolo())
+                .map(artist -> artist.getNationality())
+                .collect(toList());
+        assertThat("Forgiven, not forgotten is played by an irish band",
+                Arrays.asList("Ireland"),
+                is(nationalities));
     }
 }

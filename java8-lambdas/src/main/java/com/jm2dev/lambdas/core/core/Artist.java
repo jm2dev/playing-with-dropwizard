@@ -36,13 +36,13 @@ public final class Artist {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) { return true; }
+        if (o == null || getClass() != o.getClass()) { return false; }
 
         Artist artist = (Artist) o;
 
-        if (!name.equals(artist.name)) return false;
-        if (!nationality.equals(artist.nationality)) return false;
+        if (!name.equals(artist.name)) { return false; }
+        if (!nationality.equals(artist.nationality)) { return false; }
 
         return true;
     }
