@@ -1,4 +1,4 @@
-package com.jm2dev.lambdas.core.core;
+package com.jm2dev.lambdas.core;
 
 import java.util.Collections;
 import java.util.List;

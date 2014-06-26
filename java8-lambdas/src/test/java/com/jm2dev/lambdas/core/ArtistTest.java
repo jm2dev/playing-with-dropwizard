@@ -1,6 +1,5 @@
 package com.jm2dev.lambdas.core;
 
-import com.jm2dev.lambdas.core.core.Artist;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

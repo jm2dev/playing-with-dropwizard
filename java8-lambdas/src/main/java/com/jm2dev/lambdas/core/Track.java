@@ -1,4 +1,4 @@
-package com.jm2dev.lambdas.core.core;
+package com.jm2dev.lambdas.core;
 
 public final class Track {
     private final String name;

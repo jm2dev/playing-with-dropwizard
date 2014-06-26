@@ -1,9 +1,5 @@
 package com.jm2dev.lambdas.core;
 
-import com.jm2dev.lambdas.core.core.Album;
-import com.jm2dev.lambdas.core.core.Artist;
-import com.jm2dev.lambdas.core.core.Track;
-
 import java.util.Arrays;
 import java.util.List;
 

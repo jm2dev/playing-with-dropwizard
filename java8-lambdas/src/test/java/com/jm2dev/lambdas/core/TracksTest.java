@@ -1,7 +1,5 @@
 package com.jm2dev.lambdas.core;
 
-import com.jm2dev.lambdas.core.core.Album;
-import com.jm2dev.lambdas.core.core.Track;
 import org.junit.Test;
 
 import java.util.Comparator;
@@ -43,6 +41,6 @@ public class TracksTest {
         List<Track> tracks = album.getTracks().stream()
                 .filter(track -> track.getLength() > 60)
                 .collect(Collectors.toList());
-        assertThat(tracks.size(), is(12)); 
+        assertThat(tracks.size(), is(12));
     }
 }
