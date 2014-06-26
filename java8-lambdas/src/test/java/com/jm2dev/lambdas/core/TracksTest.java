@@ -38,8 +38,9 @@ public class TracksTest {
     @Test
     public void tracksThatLastMoreThanOneMinute() {
         Album album = SampleData.forgivenNotForgotten;
-        List<Track> tracks = album.getTracks().stream()
+        List<String> tracks = album.getTracks().stream()
                 .filter(track -> track.getLength() > 60)
+                .map(track -> track.getName())
                 .collect(Collectors.toList());
         assertThat(tracks.size(), is(12));
     }
