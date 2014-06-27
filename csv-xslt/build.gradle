@@ -1,0 +1,76 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'pmd'
+apply plugin: "com.github.johnrengelman.shadow"
+apply plugin: 'project-report'
+apply plugin: 'build-dashboard'
+apply plugin: 'checkstyle'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'CSV transformations with XSLT'
+        attributes 'Implementation-Version': version
+        attributes 'Main-Class': 'com.jm2dev.app.Jm'
+    }
+
+    // remove the security files (from mail.jar / activation.jar) so that the jar will be executable.
+    doFirst {
+        from (configurations.runtime.resolve().collect { it.isDirectory() ? it : zipTree(it) }) {
+            exclude 'META-INF/MANIFEST.MF'
+            exclude 'META-INF/*.SF'
+            exclude 'META-INF/*.DSA'
+            exclude 'META-INF/*.RSA'
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.github.jengelman.gradle.plugins:shadow:0.9.0-M3"
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    checkstyle 'com.puppycrawl.tools:checkstyle:5.6'
+
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs 'repos'
+       }
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}
+
+tasks.withType(Compile) {
+    options.compilerArgs << "-Xlint"
+}
+
+checkstyle {
+    sourceSets = [sourceSets.main]
+}
+
+javadoc {
+    title = "CSV transformations with XSLT"
+}
+
+test {
+    systemProperties 'property': 'value'
+}
