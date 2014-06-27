@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<statements>
+    <statement>
+        <date>dd-mm-yyyy</date>
+        <description>this is a description</description>
+        <amount>100.00</amount>
+        <balance>1000.00</balance>
+    </statement>
+</statements>
