@@ -19,8 +19,8 @@ public class TransformationsTest {
         try {
             Processor processor = new Processor(false);
             XsltCompiler compiler = processor.newXsltCompiler();
-            XsltExecutable executable = compiler.compile(new StreamSource(new File("src/main/xslt/xml2csv.xsl")));
-            XdmNode source = processor.newDocumentBuilder().build(new File("src/main/resources/bank.xml"));
+            XsltExecutable executable = compiler.compile(new StreamSource(new File("src/main/resources/xslt/xml2csv.xsl")));
+            XdmNode source = processor.newDocumentBuilder().build(new File("src/test/resources/bank.xml"));
             Serializer out = processor.newSerializer(new File("src/test/resources/bank.csv"));
             out.setOutputProperty(Serializer.Property.METHOD, "text");
             out.setOutputProperty(Serializer.Property.INDENT, "no");
