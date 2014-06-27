@@ -2,6 +2,7 @@ package com.jm2dev.lambdas.core;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static java.util.Arrays.asList;
 
@@ -45,4 +46,8 @@ public final class SampleData {
     // etc
     public final static List<Artist> allArtists = asList(paco,
             andrea, caroline, jim, sharon, theCorrs);
+
+    public static Stream<Album> allAlbums() {
+        return Stream.of(forgivenNotForgotten);
+    }
 }

@@ -3,6 +3,7 @@ package com.jm2dev.lambdas.core;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -64,5 +65,38 @@ public class ArtistsTest {
         assertThat("Forgiven, not forgotten is played by an irish band",
                 Arrays.asList("Ireland"),
                 is(nationalities));
+    }
+
+    private List<String> artistsNamesAndOrigins(Stream<Artist> artists) {
+        return artists
+                .flatMap(artist -> Stream.of(artist.getName(), artist.getNationality()))
+                .collect(toList());
+    }
+
+    @Test
+    public void getArtistsNamesAndPlacesOfOrigin() {
+        List<String> expected = Arrays.asList(
+                "Paco de Lucía",
+                "Spain",
+                "Andrea Corr",
+                "Ireland",
+                "Caroline Corr",
+                "Ireland",
+                "Jim Corr",
+                "Ireland",
+                "Sharon Corr",
+                "Ireland",
+                "The Corrs",
+                "Ireland");
+        List<String> actual = artistsNamesAndOrigins(SampleData.allArtists.stream());
+        assertThat(actual, is(expected));
+    }
+
+    @Test
+    public void countNumberOfArtists() {
+        int totalMembers = SampleData.allArtists.stream()
+                .map(artist -> artist.getMembers().size())
+                .reduce(0, (acc, artist) -> acc + artist);
+        assertThat(totalMembers, is(4));
     }
 }

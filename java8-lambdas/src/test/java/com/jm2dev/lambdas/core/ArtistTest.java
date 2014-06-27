@@ -2,6 +2,8 @@ package com.jm2dev.lambdas.core;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
@@ -39,5 +41,11 @@ public class ArtistTest {
     @Test
     public void bandWithMembers() {
         assertFalse(SampleData.theCorrs.isSolo());
+        assertThat(SampleData.theCorrs.getMembers(), is(Arrays.asList(
+                SampleData.andrea,
+                SampleData.caroline,
+                SampleData.jim,
+                SampleData.sharon
+        )));
     }
 }

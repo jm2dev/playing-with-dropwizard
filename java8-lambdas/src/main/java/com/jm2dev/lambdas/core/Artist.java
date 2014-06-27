@@ -30,6 +30,10 @@ public final class Artist {
         return nationality;
     }
 
+    public List<Artist> getMembers() {
+        return members;
+    }
+
     public boolean isFrom(String nationality) {
         return this.nationality.equals(nationality);
     }
