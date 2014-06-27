@@ -1,6 +1,7 @@
 #+title: Java 8 web services
 #+author: José Miguel Martínez Carrasco
 #+email: jm@0pt1mates.com
+#+EXPORT_EXCLUDE_TAGS: noexport
 
 * Introduction
 
@@ -15,24 +16,25 @@ Develop REST web services with:
 It is a gradle version of the [[https://dropwizard.github.io/dropwizard/getting-started.html][tutorial]].
 
 #+BEGIN_SRC bash
-gradle build
+gradle --daemon
+gradle clean build
 gradle shadowJar
 java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
 #+END_SRC
 
-* Time report
+* Time report                                                      :noexport:
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2014-06-23 Mon 14:31]
-| Headline                     | Time   |      |
-|------------------------------+--------+------|
-| *Total time*                 | *7:02* |      |
-|------------------------------+--------+------|
-| Time report                  | 7:02   |      |
-| \__ DONE gradle installation |        | 0:07 |
-| \__ DONE dropwizard tutorial |        | 2:14 |
-| \__ TODO dropwizard testing  |        | 1:48 |
-| \__ DONE gradle openjdk 8    |        | 0:31 |
-| \__ TODO java 8              |        | 2:22 |
+#+CAPTION: Clock summary at [2014-06-27 Fri 12:56]
+| Headline                     | Time    |       |
+|------------------------------+---------+-------|
+| *Total time*                 | *17:11* |       |
+|------------------------------+---------+-------|
+| Time report                  | 17:11   |       |
+| \__ DONE gradle installation |         |  0:07 |
+| \__ DONE dropwizard tutorial |         |  2:14 |
+| \__ TODO dropwizard testing  |         |  1:48 |
+| \__ DONE gradle openjdk 8    |         |  0:31 |
+| \__ TODO java 8              |         | 12:31 |
 #+END:
 
 ** DONE gradle installation
@@ -49,6 +51,27 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
    CLOCK: [2014-06-20 Fri 15:26]--[2014-06-20 Fri 15:57] =>  0:31
 
 ** TODO java 8
+   CLOCK: [2014-06-27 Fri 12:14]--[2014-06-27 Fri 12:56] =>  0:42
+   CLOCK: [2014-06-26 Thu 14:23]--[2014-06-26 Thu 15:24] =>  1:01
+   CLOCK: [2014-06-25 Wed 14:10]--[2014-06-25 Wed 17:16] =>  3:06
+   CLOCK: [2014-06-25 Wed 12:45]--[2014-06-25 Wed 13:52] =>  1:07
+   CLOCK: [2014-06-25 Wed 10:37]--[2014-06-25 Wed 11:55] =>  1:18
+   CLOCK: [2014-06-24 Tue 13:13]--[2014-06-24 Tue 14:57] =>  1:44
    CLOCK: [2014-06-24 Tue 10:14]--[2014-06-24 Tue 11:25] =>  1:11
    CLOCK: [2014-06-23 Mon 13:55]--[2014-06-23 Mon 14:31] =>  0:36
    CLOCK: [2014-06-23 Mon 11:28]--[2014-06-23 Mon 13:14] =>  1:46
+
+* Notes                                                            :noexport:
+
+I followed this [[http://www.xradiograph.com/Emacs/OrgMode#toc12][link]].
+
+Export README.org to markdown. Install the following packages via **M x package-install**
+
+- markdown-mode
+- markdown-mode+
+
+And run:
+
+#+BEGIN_SRC bash
+org-mode-export-to-markdown
+#+END_SRC
