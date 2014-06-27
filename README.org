@@ -24,17 +24,18 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
 
 * Time report                                                      :noexport:
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2014-06-27 Fri 12:56]
+#+CAPTION: Clock summary at [2014-06-27 Fri 23:21]
 | Headline                     | Time    |       |
 |------------------------------+---------+-------|
-| *Total time*                 | *17:11* |       |
+| *Total time*                 | *22:03* |       |
 |------------------------------+---------+-------|
-| Time report                  | 17:11   |       |
+| Time report                  | 22:03   |       |
 | \__ DONE gradle installation |         |  0:07 |
 | \__ DONE dropwizard tutorial |         |  2:14 |
 | \__ TODO dropwizard testing  |         |  1:48 |
 | \__ DONE gradle openjdk 8    |         |  0:31 |
-| \__ TODO java 8              |         | 12:31 |
+| \__ TODO java 8              |         | 14:48 |
+| \__ TODO xslt                |         |  2:35 |
 #+END:
 
 ** DONE gradle installation
@@ -51,7 +52,8 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
    CLOCK: [2014-06-20 Fri 15:26]--[2014-06-20 Fri 15:57] =>  0:31
 
 ** TODO java 8
-   CLOCK: [2014-06-27 Fri 12:14]--[2014-06-27 Fri 12:56] =>  0:42
+   CLOCK: [2014-06-27 Fri 14:36]--[2014-06-27 Fri 15:14] =>  0:38
+   CLOCK: [2014-06-27 Fri 12:14]--[2014-06-27 Fri 14:35] =>  2:21
    CLOCK: [2014-06-26 Thu 14:23]--[2014-06-26 Thu 15:24] =>  1:01
    CLOCK: [2014-06-25 Wed 14:10]--[2014-06-25 Wed 17:16] =>  3:06
    CLOCK: [2014-06-25 Wed 12:45]--[2014-06-25 Wed 13:52] =>  1:07
@@ -60,6 +62,9 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
    CLOCK: [2014-06-24 Tue 10:14]--[2014-06-24 Tue 11:25] =>  1:11
    CLOCK: [2014-06-23 Mon 13:55]--[2014-06-23 Mon 14:31] =>  0:36
    CLOCK: [2014-06-23 Mon 11:28]--[2014-06-23 Mon 13:14] =>  1:46
+
+** TODO xslt
+   CLOCK: [2014-06-27 Fri 20:46]--[2014-06-27 Fri 23:21] =>  2:35
 
 * Notes                                                            :noexport:
 
