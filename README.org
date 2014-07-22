@@ -24,18 +24,18 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
 
 * Time report                                                      :noexport:
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2014-06-27 Fri 23:21]
-| Headline                     | Time    |       |
-|------------------------------+---------+-------|
-| *Total time*                 | *22:03* |       |
-|------------------------------+---------+-------|
-| Time report                  | 22:03   |       |
-| \__ DONE gradle installation |         |  0:07 |
-| \__ DONE dropwizard tutorial |         |  2:14 |
-| \__ TODO dropwizard testing  |         |  1:48 |
-| \__ DONE gradle openjdk 8    |         |  0:31 |
-| \__ TODO java 8              |         | 14:48 |
-| \__ TODO xslt                |         |  2:35 |
+#+CAPTION: Clock summary at [2014-07-22 Tue 02:15]
+| Headline                     | Time      |       |
+|------------------------------+-----------+-------|
+| *Total time*                 | *1d 1:54* |       |
+|------------------------------+-----------+-------|
+| Time report                  | 1d 1:54   |       |
+| \__ DONE gradle installation |           |  0:07 |
+| \__ DONE dropwizard tutorial |           |  2:14 |
+| \__ TODO dropwizard testing  |           |  1:48 |
+| \__ DONE gradle openjdk 8    |           |  0:31 |
+| \__ TODO java 8              |           | 14:48 |
+| \__ TODO xslt                |           |  6:26 |
 #+END:
 
 ** DONE gradle installation
@@ -64,6 +64,7 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
    CLOCK: [2014-06-23 Mon 11:28]--[2014-06-23 Mon 13:14] =>  1:46
 
 ** TODO xslt
+   CLOCK: [2014-07-21 Mon 22:24]--[2014-07-22 Tue 02:15] =>  3:51
    CLOCK: [2014-06-27 Fri 20:46]--[2014-06-27 Fri 23:21] =>  2:35
 
 * Notes                                                            :noexport:
