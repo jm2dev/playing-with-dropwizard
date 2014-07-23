@@ -1,0 +1,30 @@
+Bank statements processor
+=========================
+:Author:    José Miguel
+:Email:     <jm@0pt1mates.com>
+:Date:      2014-07-23
+:Revision:  version 1.0
+
+Abstract
+--------
+
+Simple java application that parses csv file with bank statements and calculates balances.
+
+Dependencies
+------------
+
+- Java 8
+- Gradle
+
+Build
+-----
+
+[source,bash]
+gradle shadowJar
+
+Usage
+-----
+
+[source,bash]
+cd java8ws/csv-xslt/build/libs
+java -jar csv-xslt-1.0-all.jar file.csv 100

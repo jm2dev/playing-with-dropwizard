@@ -24,18 +24,19 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
 
 * Time report                                                      :noexport:
 #+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2014-07-22 Tue 02:15]
+#+CAPTION: Clock summary at [2014-07-23 Wed 01:14]
 | Headline                     | Time      |       |
 |------------------------------+-----------+-------|
-| *Total time*                 | *1d 1:54* |       |
+| *Total time*                 | *1d 5:42* |       |
 |------------------------------+-----------+-------|
-| Time report                  | 1d 1:54   |       |
+| Time report                  | 1d 5:42   |       |
 | \__ DONE gradle installation |           |  0:07 |
 | \__ DONE dropwizard tutorial |           |  2:14 |
 | \__ TODO dropwizard testing  |           |  1:48 |
 | \__ DONE gradle openjdk 8    |           |  0:31 |
 | \__ TODO java 8              |           | 14:48 |
-| \__ TODO xslt                |           |  6:26 |
+| \__ DONE xslt                |           |  6:26 |
+| \__ TODO bank statements     |           |  3:48 |
 #+END:
 
 ** DONE gradle installation
@@ -63,9 +64,12 @@ java -jar build/libs/dropwizard-tutorial-1.0-all.jar server hello-world.yml
    CLOCK: [2014-06-23 Mon 13:55]--[2014-06-23 Mon 14:31] =>  0:36
    CLOCK: [2014-06-23 Mon 11:28]--[2014-06-23 Mon 13:14] =>  1:46
 
-** TODO xslt
+** DONE xslt
    CLOCK: [2014-07-21 Mon 22:24]--[2014-07-22 Tue 02:15] =>  3:51
    CLOCK: [2014-06-27 Fri 20:46]--[2014-06-27 Fri 23:21] =>  2:35
+
+** TODO bank statements
+   CLOCK: [2014-07-22 Wed 21:25]--[2014-07-23 Wed 01:13] =>  3:48
 
 * Notes                                                            :noexport:
 
